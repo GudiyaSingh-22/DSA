@@ -2,11 +2,10 @@ public class Student {
     int rollno;
     String branch ;
     String name;
-    Student(int rollno, String branche, String name){
-        rollno = rollno;
-        branch = branche;
-
-        name = name ;
+    Student(int r, String b, String n){
+        rollno = r;
+        branch = b;
+        name = n;
     }
     Student(){
         System.out.println("hello i am constrcter"); 
