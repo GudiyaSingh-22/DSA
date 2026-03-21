@@ -2,7 +2,7 @@ public class Rectangle {
     int length;
     int width;
     Rectangle(){
-        System.out.println("Area and perimeter:");
+        System.out.println("Area and perimeter of rectangle:");
     }
     Rectangle(int l,int w){
         length = l;
