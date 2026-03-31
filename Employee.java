@@ -1,7 +1,7 @@
-class Employee {
+class Employe {
      String name;
     double salary;
-    Employee(String n, double s) {
+    Employe(String n, double s) {
         name = n;
         salary = s;
     }
@@ -16,10 +16,10 @@ class Employee {
         System.out.println("Salary: " + salary);
     }
 }
-public class Main {
+public class Employee {
 public static void main(String[] args) {
-        Employee e1 = new Employee("Gudiya", 10000);
-        Employee e2 = new Employee("Rahul", 15000);
+        Employe e1 = new Employe("Gudiya", 10000);
+        Employe e2 = new Employe("Rahul", 15000);
         e1.display();
         e2.display();
 
@@ -29,3 +29,4 @@ public static void main(String[] args) {
     
 } 
 } 
+    
