@@ -9,14 +9,14 @@ public class Linear {
  }  
  static int LinearSearch(int[] arr , int target){
     if (arr.length == 0) {
-        return -1;
+        return Integer.MAX_VALUE;
     }
   for (int i = 0; i < arr.length; i++) {
     int element = arr[i];
     if (element == target) {
-     return i;   
+     return element;   
     }
   }
-  return -1;
+  return Integer.MAX_VALUE;
  } 
 }
