@@ -6,12 +6,13 @@ public class SetMismatch {
     public static void main(String[] args) {
         int[]arr = {1,2,2,4};
         int[] ans = setMis(arr);
+        System.out.println(Arrays.toString(ans));
         System.out.println(Arrays.toString(arr));
     }
     static int[] setMis(int[]arr){
         int i=0;
-        int correct=arr[i]-1;
         while (i<arr.length) {
+            int correct=arr[i]-1;
             if (arr[i]!=arr[correct]) {
                 swap(arr,i,correct);
         }else{
