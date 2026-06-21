@@ -19,5 +19,4 @@ public class Performance {
         }
         System.out.println(builder.toString());
     }
-    
 }

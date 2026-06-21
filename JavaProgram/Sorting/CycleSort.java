@@ -24,5 +24,4 @@ public class CycleSort {
         arr[first] = arr[second];
         arr[second] = temp;
     }
-    
 }
