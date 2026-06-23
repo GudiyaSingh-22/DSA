@@ -1,8 +1,8 @@
-package JavaProgram.Sorting;
+package JavaProgram.Rough;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class Insertion {
     public static void main(String[] args) {
         int[] arr = {4,5,1,2,3};
         insertion(arr);
