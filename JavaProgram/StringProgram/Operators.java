@@ -20,7 +20,7 @@ public class Operators {
         System.out.println(new Integer(56)+ ""+new ArrayList<>());//atleast one string should be there
 
        //operator minus can not be applied to string
-
+       //operator plus in java is defined for only primitives and string 
 
 
 
