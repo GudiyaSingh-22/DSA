@@ -1,18 +1,14 @@
 package JavaProgram.Searching;
 
-public class CeilingOfaNo {
-    public static void main(String[] args) {
+public class FloorOfaNo {
+     public static void main(String[] args) {
        int arr [] = {2,3,5,9,14,16,18};
        int target = 15;
-       int ans = ceiling(arr, target);
+       int ans = floor(arr, target);
        System.out.println(ans);
     }
-    //ceiling means smallest no grreater than or equal to target
-    static int ceiling(int []arr,int target){
-        // but what if the target is greater than the greatest no in the array
-        if (target>arr[arr.length-1]) {
-            return -1;
-        }
+    //floor means smallest no less than or equal to target
+    static int floor(int []arr,int target){
         int start = 0;
         int end = arr.length-1;
         while (start<=end) {
@@ -27,6 +23,7 @@ public class CeilingOfaNo {
                 return mid;
             }
         }
-        return start;
+        return end;
     }
 }
+
