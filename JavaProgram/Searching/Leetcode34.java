@@ -1,11 +1,14 @@
 package JavaProgram.Searching;
 
+import java.util.Arrays;
+
 public class Leetcode34 {
     public static void main(String[] args) {
         int[]nums={5,7,7,8,8,10};
         int target = 8;
-        int ans = searchRange(int[]nums,target);
-        System.out.println(ans);
+        Leetcode34 obj = new Leetcode34();
+        int[] ans = obj.searchRange(nums, target);
+        System.out.println(Arrays.toString(ans));
     }
     public int[] searchRange(int[] nums, int target) {
         int[] ans = {-1,-1};
@@ -29,6 +32,9 @@ public class Leetcode34 {
                 if(findStartIndex){
                   end = mid -1;  
                 }
+                else{
+                start=mid+1;
+            }
             }
             else{
                 start=mid+1;
