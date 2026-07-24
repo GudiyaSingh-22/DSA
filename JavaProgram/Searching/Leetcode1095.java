@@ -2,18 +2,20 @@ package JavaProgram.Searching;
 
 public class Leetcode1095 {
     public static void main(String[] args) {
-        int [] arr = {99,80,75,22,11,10,5,2,-3};
-        int target = 22;
+        int [] arr = {1,2,3,4,5,3,1};
+        int target = 3;
+        int ans = search(arr,target);
+        System.out.println(ans);
     }
-    int search(int[]arr,int target){
+    static int search(int[]arr,int target){
       int peak = peakIndexInMountainArray(arr);
       int firstTry = orderAgnosticBS(arr, target,0,peak);
     if (firstTry!=-1) {
         return firstTry;
     }
-    return orderAgnosticBS(arr, target , peak+1, arr.length-1);
+    return orderAgnosticBS(arr, target, peak+1, arr.length-1);
     }   
-    public int peakIndexInMountainArray(int[]arr){
+    static int peakIndexInMountainArray(int[]arr){
         int start = 0;
         int end = arr.length-1;
         while (start<end) {
@@ -27,7 +29,7 @@ public class Leetcode1095 {
         return start;
     }
      static int orderAgnosticBS(int[]arr,int target,int start,int end){
-        boolean isAsc = arr[start]<arr[end];
+        boolean isAsc = arr[start]<=arr[end];
         while (start<=end) {
             int mid = start + (end - start)/2;
             if (arr[mid]==target) {
