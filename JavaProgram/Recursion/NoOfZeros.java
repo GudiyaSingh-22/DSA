@@ -2,19 +2,21 @@ package JavaProgram.Recursion;
 
 public class NoOfZeros {
     public static void main(String[] args) {
-        System.out.println(count(302040510));
-    }
-    static int count(int n){
-        return helper(n,0);
+        System.out.println(helper(3020, 0));
     }
     private static int helper(int n,int c){
         if (n == 0) {
             return c;
         }
-        int rem = n%10;
-        if (rem == 0) {
-            return helper(n/10, c+1);
+        int digit = n%10;
+        int count = 0 ; 
+        if (digit == 0) {
+            count = helper(n/10, c+1);
+        }else {
+            count = helper(n/10, c);
         }
-        return helper(n/10, c);
+
+        return count ; 
+       
     }
 }

@@ -2,12 +2,17 @@ package JavaProgram.Recursion;
 
 public class ProductOfDigits {
     public static void main(String[] args) {
-      System.out.println(product(254));  
+      System.out.println(helper(21042,1));  
     }
-    static int product(int n){
-        if(n%10==n){
-            return n ;
+    static int helper(int n,int product){
+        if(n == 0){
+            return product ;
         }
-        return n%10 * product(n/10);
+       int digit = n%10;    
+        if (digit != 0) {
+            product = product * digit;
+            return helper(n/10, product);
+        }
+        return helper(n/10, product);
     }
 }
