@@ -21,6 +21,7 @@ public class Aa {
     for (int i = 0; i < str.length; i++) {
      str[i]= in.next();
      }
+     in.close();
      System.out.println(Arrays.toString(str));
 
 // modify

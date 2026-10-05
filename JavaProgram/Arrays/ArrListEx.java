@@ -25,6 +25,7 @@ public class ArrListEx {
         for (int i = 0; i < 5; i++) {
             System.out.print(list.get(i));
         }
+        in.close();
         System.out.println(list);
     }  
 } 

@@ -14,6 +14,7 @@ public class ColNoFix {
         for (int col = 0; col < arr[row].length; col++) {
             System.out.print(arr[row][col] + " ");
         }
+        in.close();
         System.out.println();
        } 
     }
